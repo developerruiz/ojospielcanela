@@ -1,0 +1,164 @@
+// -------------------------------
+// Variables
+// ------------------------------
+
+$negro-custom: #141618;
+$blanco: #fff;
+$texto-oscuro: #303133;
+$texto-claro: #777;
+$dorado: #b4975a;
+$gris-claro: #eaeaea;
+
+// FUETES
+$fuente-principal: 'Playfair Display', serif;
+$fuente-secundaria: 'Poppins', serif;
+// -------------------------------
+// generales
+// ------------------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: 16px;
+    font-family: $fuente-principal;
+    color: $texto-oscuro;
+}
+
+.container {
+    // width: 90%;
+    // max-width: 1080px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $texto-oscuro;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: fade($texto-oscuro, 50%);
+    }
+
+}
+
+.titulo-seccion {
+    h2 {
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 3.6875rem;
+        margin-bottom: 1.125rem;
+        font-style: italic;
+        letter-spacing: -0.02em;
+    }
+
+    p {
+        font-size: 1.125rem;
+        color: #777;
+    }
+}
+
+// -------------------------------
+// generales
+// ------------------------------
+
+.main {
+    margin-top: 5.875rem;
+
+    .menu-platos {
+        // padding: 5.625rem;
+
+        .container {
+            .titulo-seccion {
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .contenedor-menu {
+                margin-top: 2.5rem;
+
+                .encabezado {
+                    padding-left: 0;
+                    font-weight: 600;
+                    font-family: $fuente-secundaria;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;    
+                    
+                    li {
+                        
+                        // border: 2px solid $dorado;
+                        display: flex;
+                        align-items: center;
+                        height: 80px;
+                        width: 250px;
+                        justify-content: center;
+                        // margin: 0 20px;
+                        
+                        a {
+                            font-size: 0.75rem;
+                            padding: 1.125rem 1.4375rem 1.125rem 1.4375rem;
+                            display: block;
+                            cursor: pointer;
+                            -webkit-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            transition: all .3s ease;
+                            border-bottom: 2px solid transparent;
+                            text-decoration: none;
+                            color: #121212;                         
+
+
+                            &:hover {
+                                color: #fd5d14;
+                            }
+                        }
+
+                        &.active {
+                            color: #fd5d14;
+                            border-bottom: 4px solid #fd5d14;
+                        }
+
+                    }
+                }
+            }
+
+            .contenido {
+                
+                margin: 0 auto;
+                margin-top: 2.5rem;
+                
+                >div {
+                    display: none;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                }
+
+                .active {
+                    display: block;
+                }
+
+    
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "id": "1",
+        "categoria": "1",
+        "imagen": "dico-portada-vinil",
+        "title": "Cargador frontal Caterpillar 980H",
+        "detalle": {
+            "textoUno": "Modelo de motor: Motor diésel CAT C15 con tecnología ACERT TM",
+            "textoDos": "Potencia del motor: 293 kW/ 398 CV",
+            "textoTres": "Capacidad de excavación: 436 cm",
+            "textoCuatro": "Capacidad del cucharon: de 4.5 a 6.1 m3",
+            "textoCinco":"Tracción: 4x4"
+        }
+    }
+]
